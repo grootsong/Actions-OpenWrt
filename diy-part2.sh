@@ -8,9 +8,7 @@
 # Blog: https://p3terx.com
 #============================================================
 
-# Modify default IP and host name
+# Modify default IP, host name and distribution reversion
 sed -i 's/192.168.1.1/192.168.16.1/g' package/base-files/files/bin/config_generate
 sed -i 's/hostname='OpenWrt'/hostname='OpenWrt-PPS/g' package/base-files/files/bin/config_generate
-# Modify distribution reversion
 sed -i 's/R20.6.18/V202006/g' package/lean/default-settings/files/zzz-default-settings
-
