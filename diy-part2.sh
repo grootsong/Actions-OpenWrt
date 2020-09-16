@@ -10,4 +10,4 @@
 
 # Modify default IP and distribution reversion
 sed -i 's/192.168.1.1/192.168.16.1/g' package/base-files/files/bin/config_generate
-sed -i 's/R20.6.26/Modified by PPS V202006/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/'R20.9.15'/'Modified by PPS V202009'/g' package/lean/default-settings/files/zzz-default-settings
